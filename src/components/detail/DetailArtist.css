@@ -1,0 +1,26 @@
+.DetailArtist {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+}
+
+.DetailArtist-general-info {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.DetailArtist-info-container {
+    border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.DetailArtist-description {
+    background: #fafafa;
+    font-size: 16px;
+    text-align: justify;
+    padding: 20px;
+}
+
+.DetailArtist-albums {
+    padding: 25px;
+}

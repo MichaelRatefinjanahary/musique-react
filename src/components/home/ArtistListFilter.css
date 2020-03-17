@@ -1,0 +1,46 @@
+.ArtistListFilter {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: white;
+}
+
+.ArtistListFilter-alphabet {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 70%;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+.ArtistListFilter li {
+    width: 3%;
+    margin: 0.3%;
+}
+
+.ArtistListFilter li span {
+    font-size: 20px;
+    padding: 10px 0px;
+    width: 100%;
+    flex: 1;
+    display: inline-block;
+}
+
+.ArtistListFilter li span:hover {
+    text-decoration: underline #3f51b5;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .ArtistListFilter-alphabet {
+        width: 90%;
+    }
+    .ArtistListFilter-alphabet li {
+        width: 12%;
+        margin: 0.2%;
+    }
+}

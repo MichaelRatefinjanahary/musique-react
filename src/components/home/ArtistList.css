@@ -1,0 +1,36 @@
+.ArtistList {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+    background-color: white;
+}
+
+.ArtistList-hidden {
+    display: none;
+}
+
+.ArtistList-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: auto;
+}
+
+.ArtistList-button {
+    width: 300px;
+    height: 60px;
+    background: #F2F2F2;
+    margin-top: 10px;
+    display: inline-table;
+    padding-top: 18px;
+}
+
+.ArtistList-pagination-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ArtistList-iconButton {
+    margin: 10px;
+}

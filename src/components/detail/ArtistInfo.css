@@ -1,0 +1,27 @@
+.ArtistInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.ArtistInfo img {
+    border-radius: 100%;
+}
+
+.ArtistInfo span {
+    color: #333;
+    padding: 10px;
+    font-size: 36px;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.ArtistInfo-members-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
