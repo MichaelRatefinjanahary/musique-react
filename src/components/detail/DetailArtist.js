@@ -24,7 +24,7 @@ export default function DetailArtist(props) {
     fetchData(artistName).then(artist => {
       setArtist(artist);
     });
-  }, []);
+  }, [artistName]);
 
   return (
     <div className="DetailArtist">
