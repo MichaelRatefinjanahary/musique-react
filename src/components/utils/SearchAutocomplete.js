@@ -16,9 +16,9 @@ export default function SearchAutocomplete() {
   const [loading, setLoading] = React.useState(false);
   const history = useHistory();
 
-  const handleChange = async (e, value) => {
+  const handleChange = async (e) => {
     setLoading(true);
-
+    const value = e.target.value;
     if (value !== '') {
       let url = new URL('https://wasabi.i3s.unice.fr/search/fulltext/' + value);
       const response = await fetch(url);
@@ -40,7 +40,6 @@ export default function SearchAutocomplete() {
       id="asynchronous-demo"
       style={{ width: 450 }}
       open={open}
-      onInputChange={handleChange}
       onChange={(e, value) => {
         if (value !== null) {
           history.push('/artist/' + value.name);
@@ -58,6 +57,7 @@ export default function SearchAutocomplete() {
           {...params}
           variant="outlined"
           placeholder="Rechercher un artiste ..."
+          onChange={handleChange}
           InputProps={{
             ...params.InputProps,
             style: {
