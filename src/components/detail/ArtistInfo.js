@@ -169,7 +169,7 @@ export default function ArtistInfo({ artist }) {
                         </DialogContent>
                         <DialogActions>
                             <Button onClick={handleClose} color="primary">
-                                Close
+                                Fermer
                             </Button>
                         </DialogActions>
                     </Dialog>
