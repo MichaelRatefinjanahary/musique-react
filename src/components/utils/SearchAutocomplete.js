@@ -20,8 +20,8 @@ export default function SearchAutocomplete() {
     setLoading(true);
     const value = e.target.value;
     if (value !== '') {
-      // let url = new URL('https://wasabi.i3s.unice.fr/search/fulltext/' + value);
-      const response = await fetch('/search/fulltext/' + value);
+      let url = new URL('https://wasabi.i3s.unice.fr/search/fulltext/' + value);
+      const response = await fetch(url);
       await sleep(1e3);
       const artists = await response.json();
       setOptions(artists.map(artist => {return {name: artist.name}}));
