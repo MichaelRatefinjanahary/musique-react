@@ -24,8 +24,8 @@ export default function DetailArtist(props) {
   const [open, setOpen] = useState(true);
 
   const fetchData = async (artistName) => {
-    // let url = new URL('https://wasabi.i3s.unice.fr/search/artist/' + artistName);
-    const response = await fetch('/search/artist/' + artistName);
+    let url = new URL('https://wasabi.i3s.unice.fr/search/artist/' + artistName);
+    const response = await fetch(url);
     const responseJson = await response.json();
 
     return responseJson;
