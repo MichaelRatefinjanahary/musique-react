@@ -35,8 +35,8 @@ export default function ArtistList() {
     const [open, setOpen] = useState(false);
 
     const fetchData = async (alphabet, page) => {
-        let url = new URL('https://wasabi.i3s.unice.fr/search/categorie/Artists/lettre/' + alphabet + '/page/' + page);
-        const response = await fetch(url);
+        // let url = new URL('/search/categorie/Artists/lettre/' + alphabet + '/page/' + page);
+        const response = await fetch('/search/categorie/Artists/lettre/' + alphabet + '/page/' + page);
         const responseJson = await response.json();
 
         return responseJson;
