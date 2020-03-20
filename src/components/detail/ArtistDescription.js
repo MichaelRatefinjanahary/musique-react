@@ -12,11 +12,11 @@ export default function ArtistDescription({artist}) {
                 {
                     urls.map((url,index) => {
                         return (
-                            <a className={(artist[url.urlName] === '') ? 'ArtistDescription-hiddenLink' : ''} key={index} title={url.urlAlt} onClick={() => window.open(artist[url.urlName], '_blank')}>
+                            <span className={(artist[url.urlName] === '') ? 'ArtistDescription-hiddenLink' : ''} key={index} title={url.urlAlt} onClick={() => window.open(artist[url.urlName], '_blank')}>
                                 <div>
                                     <img src={url.imageUrl} alt={url.urlAlt}/>
                                 </div>
-                            </a>
+                            </span>
                         )
                     })
                 }

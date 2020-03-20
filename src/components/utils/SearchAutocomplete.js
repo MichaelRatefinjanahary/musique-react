@@ -3,6 +3,10 @@ import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import { useHistory } from 'react-router-dom';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import ListItemAvatar from '@material-ui/core/ListItemAvatar';
+import './SearchAutocomplete.css'
 
 function sleep(delay = 0) {
   return new Promise(resolve => {
@@ -24,8 +28,13 @@ export default function SearchAutocomplete() {
       const response = await fetch('/api/fulltext/' + value);
       await sleep(1e3);
       const artists = await response.json();
-      setOptions(artists.map(artist => {return {name: artist.name}}));
-      
+      setOptions(artists.map(artist => {
+        return {
+          name: artist.name,
+          picture: artist.picture
+        }
+      }));
+
       setLoading(false);
       setOpen(true);
       return;
@@ -52,6 +61,14 @@ export default function SearchAutocomplete() {
       getOptionLabel={option => option.name}
       options={options}
       loading={loading}
+      renderOption={(option) => (
+        <ListItem>
+          <ListItemAvatar className="SearchAutocomplete-list">
+            <img src={option.picture} alt="Artist icon"/>
+          </ListItemAvatar>
+          <ListItemText primary={option.name} />
+        </ListItem>
+      )}
       renderInput={params => (
         <TextField
           {...params}
