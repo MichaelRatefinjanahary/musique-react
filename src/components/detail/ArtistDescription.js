@@ -1,6 +1,6 @@
 import React from 'react';
 import './ArtistDescription.css';
-import Divider from '@material-ui/core/Divider';
+import urls from './data/urls';
 
 export default function ArtistDescription({artist}) {
     return (
@@ -8,7 +8,19 @@ export default function ArtistDescription({artist}) {
             <span>
                 {artist?.dbp_abstract}
             </span>
-            <Divider className="DetailArtist-divider" variant="middle" component="div" />
+            <nav className="ArtistDescription-externalLinks">
+                {
+                    urls.map((url,index) => {
+                        return (
+                            <a className={(artist[url.urlName] === '') ? 'ArtistDescription-hiddenLink' : ''} key={index} title={url.urlAlt} onClick={() => window.open(artist[url.urlName], '_blank')}>
+                                <div>
+                                    <img src={url.imageUrl} alt={url.urlAlt}/>
+                                </div>
+                            </a>
+                        )
+                    })
+                }
+            </nav>
         </div>
     );
 }
