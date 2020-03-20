@@ -1,77 +1,77 @@
 let urls = [
     {
         urlName: 'urlWikipedia',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/wikipedia_icon.svg',
+        imageUrl: '/img/wikipedia.svg',
         urlAlt: 'Wikipedia'
     },
     {
         urlName: 'urlOfficialWebsite',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/website_icon.svg',
+        imageUrl: '/img/official.svg',
         urlAlt: 'Official website'
     },
     {
         urlName: 'urlFacebook',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/facebook_icon.svg',
+        imageUrl: '/img/facebook.svg',
         urlAlt: 'Facebook'
     },
     {
         urlName: 'urlMySpace',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/myspace_icon.svg',
+        imageUrl: '/img/my-space.svg',
         urlAlt: 'MySpace'
     },
     {
         urlName: 'urlTwitter',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/twitter_icon.svg',
+        imageUrl: '/img/twitter.svg',
         urlAlt: 'Twitter'
     },
     {
         urlName: 'urlAmazon',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/amazon_icon.svg',
+        imageUrl: '/img/amazon.svg',
         urlAlt: 'Amazon'
     },
     {
         urlName: 'urlITunes',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/itunes_icon.svg',
+        imageUrl: '/img/itunes.svg',
         urlAlt: 'iTunes'
     },
     {
         urlName: 'urlAllmusic',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/allmusic_icon.svg',
+        imageUrl: '/img/allmusic.svg',
         urlAlt: 'AllMusic'
     },
     {
         urlName: 'urlDiscogs',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/discogs_icon.svg',
+        imageUrl: '/img/discogs.svg',
         urlAlt: 'Discogs'
     },
     {
         urlName: 'urlMusicBrainz',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/musicbrainz_icon.svg',
+        imageUrl: '/img/musicbrainz.svg',
         urlAlt: 'Music Brainz'
     },
     {
         urlName: 'urlYouTube',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/youtube_icon.svg',
+        imageUrl: '/img/youtube.svg',
         urlAlt: 'Youtube'
     },
     {
         urlName: 'urlSpotify',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/spotify_icon.svg',
+        imageUrl: '/img/spotify.svg',
         urlAlt: 'Spotify'
     },
     {
         urlName: 'urlPureVolume',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/purevolume_icon.svg',
+        imageUrl: '/img/purevolume.svg',
         urlAlt: 'PureVolume'
     },
     {
         urlName: 'urlRateYourMusic',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/rateyourmusic_icon.svg',
+        imageUrl: '/img/rateyourmusic.svg',
         urlAlt: 'RateYourMusic'
     },
     {
         urlName: 'urlSoundCloud',
-        imageUrl: 'https://wasabi.i3s.unice.fr/img/soundcloud_icon.svg',
+        imageUrl: '/img/soundcloud.svg',
         urlAlt: 'SoundCloud'
     }
 ]
