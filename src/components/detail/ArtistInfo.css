@@ -25,3 +25,7 @@
     align-items: center;
     justify-content: center;
 }
+
+.ArtistInfo-members-button-hidden {
+    display: none;
+}

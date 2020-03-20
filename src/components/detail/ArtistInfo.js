@@ -44,6 +44,8 @@ export default function ArtistInfo({ artist }) {
         return member.ended === false
     });
 
+    const hiddenMemberButton = (artist?.members?.length !== 0) ? '' : 'ArtistInfo-members-button-hidden';
+
     return (
         <div>
             <div className="ArtistInfo">
@@ -98,7 +100,7 @@ export default function ArtistInfo({ artist }) {
                     </ListItem>
                     <Divider variant="inset" component="li" />
                 </List>
-                <div className="ArtistInfo-members-button">
+                <div className={"ArtistInfo-members-button " + hiddenMemberButton}>
                     <Button
                         variant="contained"
                         color="default"
