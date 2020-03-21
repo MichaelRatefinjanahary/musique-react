@@ -64,7 +64,7 @@ export default function SearchAutocomplete() {
       renderOption={(option) => (
         <ListItem>
           <ListItemAvatar className="SearchAutocomplete-list">
-            <img src={option.picture} alt="Artist icon"/>
+            <img src={option.picture} alt=""/>
           </ListItemAvatar>
           <ListItemText primary={option.name} />
         </ListItem>

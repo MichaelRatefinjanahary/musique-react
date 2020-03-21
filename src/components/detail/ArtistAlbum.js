@@ -31,6 +31,7 @@ const useStyles = makeStyles(theme => ({
 
 export default function ArtistAlbum({artist, album}) {
   const classes = useStyles();
+  const defaultAlbumImage = '/img/album.png';
   return (
     <div className="ArtistAlbum">
       <Card className={classes.root} variant="outlined">
@@ -45,7 +46,9 @@ export default function ArtistAlbum({artist, album}) {
         />
         <CardMedia
           className={classes.media}
-          image={album?.cover?.medium}
+          image={
+            ('cover' in album) ? album?.cover?.medium : defaultAlbumImage
+          }
           title={album?.title}
         />
         <CardContent className={classes.content}>

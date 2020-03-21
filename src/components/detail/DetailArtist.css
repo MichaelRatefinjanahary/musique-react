@@ -24,3 +24,27 @@
 .DetailArtist-albums {
     padding: 25px;
 }
+
+.DetailArtist-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.DetailArtist-footer div {
+    background-color: #3f50b5;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.DetailArtist-footer div span {
+    color: #eee;
+    font-size: 12px;
+    padding: 20px;
+    display: flex;
+    text-decoration: none;
+    cursor: default;
+}
