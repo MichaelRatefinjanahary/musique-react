@@ -19,6 +19,7 @@ export default function SearchAutocomplete() {
   const [options, setOptions] = React.useState([]);
   const [loading, setLoading] = React.useState(false);
   const history = useHistory();
+  const defaultPicture = '/img/artist.png';
 
   const handleChange = async (e) => {
     setLoading(true);
@@ -64,7 +65,7 @@ export default function SearchAutocomplete() {
       renderOption={(option) => (
         <ListItem>
           <ListItemAvatar className="SearchAutocomplete-list">
-            <img src={option.picture} alt=""/>
+            <img src={(option.picture === '' ? defaultPicture : option.picture)} alt=""/>
           </ListItemAvatar>
           <ListItemText primary={option.name} />
         </ListItem>
