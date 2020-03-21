@@ -55,6 +55,13 @@ export default function DetailArtist(props) {
           })
         }
       </Grid>
+      <div className="DetailArtist-footer">
+        <div>
+          {
+            artist?.subject?.map(item => <span>{item}</span>)
+          }
+        </div>
+      </div>
       <Backdrop className={classes.backdrop} open={open}>
         <CircularProgress color="inherit" />
       </Backdrop>
