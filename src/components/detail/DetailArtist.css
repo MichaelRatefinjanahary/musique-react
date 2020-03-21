@@ -30,6 +30,7 @@
     flex-direction: row;
     justify-content: flex-start;
     position: relative;
+    background-color: #3f50b5;
 }
 
 .DetailArtist-footer div {
